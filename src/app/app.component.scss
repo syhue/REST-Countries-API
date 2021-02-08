@@ -1,0 +1,46 @@
+.horizontal-flex-container {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    height: fit-content;
+    padding-left: 5rem;
+    padding-right: 5rem;
+    padding-top: 1rem;
+    padding-bottom: 1rem;
+
+    .dark-mode-container {
+        display: flex;
+        flex-direction: row;
+        border: blue 1px solid;
+        
+
+        div {
+            margin-left: 0.5rem;
+            border: blue 1px solid;
+            align-items: center;
+            height: fit-content;
+        }
+    }
+}
+
+.body-container {
+    background-color: #fafafa;
+    height: fit-content;
+    padding-top: 1rem;
+    padding-bottom: 1rem;
+
+    .card-container {
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        padding-left: 5rem;
+        padding-right: 5rem;
+
+        div {
+            margin: 2rem;
+        }
+    }
+
+}
+
