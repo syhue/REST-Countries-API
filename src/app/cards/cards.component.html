@@ -1,4 +1,4 @@
-<mat-card class="example-card">
+<mat-card class="example-card" [routerLink]="['card-details', name]">
     <img mat-card-image src="{{photo}}" alt="Photo of a Shiba Inu">
     <mat-card-content>
       <h2 class="bold">{{ name }}</h2>

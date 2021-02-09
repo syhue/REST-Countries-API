@@ -23,3 +23,24 @@
         }
     }
 }
+
+.body-container {
+    background-color: #fafafa;
+    height: fit-content;
+    padding-top: 1rem;
+    padding-bottom: 1rem;
+
+    .card-container {
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        padding-left: 5rem;
+        padding-right: 5rem;
+
+        div {
+            margin: 2rem;
+        }
+    }
+
+}
+

@@ -10,12 +10,18 @@ import { AppComponent } from './app.component';
 import { CardsComponent } from './cards/cards.component';
 import { MatCardModule } from '@angular/material/card';
 import { FormsModule } from '@angular/forms';
+import { CardDetailsComponent } from './card-details/card-details.component';
+import { MainComponent } from './main/main.component';
+import { MatButtonModule } from '@angular/material/button';
+
 
 
 @NgModule({
   declarations: [
     AppComponent,
-    CardsComponent
+    CardsComponent,
+    CardDetailsComponent,
+    MainComponent
   ],
   imports: [
     BrowserModule,
@@ -27,6 +33,7 @@ import { FormsModule } from '@angular/forms';
     HttpClientModule,
     MatCardModule,
     FormsModule,
+    MatButtonModule,
   ],
   providers: [],
   bootstrap: [AppComponent],

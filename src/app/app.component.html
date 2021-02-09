@@ -5,32 +5,4 @@
     <div><h3>Dark Mode</h3></div>
   </div>
 </div>
-
-<div class="body-container">
-  <div class="horizontal-flex-container">
-    <div>
-      <mat-form-field appearance="fill">
-        <mat-label>Input</mat-label>
-        <input matInput (keypress)="getName($event)">
-      </mat-form-field>
-    </div>
-
-    <div>
-      <mat-form-field appearance="fill">
-        <mat-label>Filter by Region</mat-label>
-        <mat-select>
-          <mat-option *ngFor="let region of regions" [value]="region" (onSelectionChange)="getRegion(region.value)">
-            {{ region.viewValue }}
-          </mat-option>
-        </mat-select>
-      </mat-form-field>
-    </div>
-  </div>
-  
-  <div class="card-container">
-    <div *ngFor="let item of data">
-      <app-cards [photo]="item.flag" [name]="item.name" [population]="item.population" [region]="item.region" [capital]="item.capital"></app-cards>
-    </div>
-  </div>
-  
-</div>
+<router-outlet></router-outlet>
