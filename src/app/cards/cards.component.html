@@ -1,9 +1,9 @@
 <mat-card class="example-card" [routerLink]="['card-details', name]">
-    <img mat-card-image src="{{photo}}" alt="Photo of a Shiba Inu">
+    <div class="flag"><img mat-card-image src="{{photo}}" alt="Photo of a Shiba Inu"></div>
     <mat-card-content>
-      <h2 class="bold">{{ name }}</h2>
-      <h4><span class="bold">Population: </span>{{ population }}</h4>
-      <h4><span class="bold">Region: </span>{{ region }}</h4>
-      <h4><span class="bold">Capital: </span>{{ capital }}</h4>
+        <h2 class="bold-800">{{ name }}</h2>
+        <h4><span class="bold-600">Population: </span>{{ population }}</h4>
+        <h4><span class="bold-600">Region: </span>{{ region }}</h4>
+        <h4><span class="bold-600">Capital: </span>{{ capital }}</h4>
     </mat-card-content>
-  </mat-card>
+</mat-card>

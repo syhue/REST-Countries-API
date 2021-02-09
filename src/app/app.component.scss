@@ -12,14 +12,18 @@
     .dark-mode-container {
         display: flex;
         flex-direction: row;
-        border: blue 1px solid;
         
-
         div {
             margin-left: 0.5rem;
-            border: blue 1px solid;
             align-items: center;
             height: fit-content;
         }
+    }
+}
+
+@media screen and (max-width: 600px) {
+
+    .horizontal-flex-container {
+        padding: 1rem 1rem 0rem 1rem;
     }
 }

@@ -5,7 +5,7 @@ import { ApiService } from '../services/api.service';
 @Component({
   selector: 'app-cards',
   templateUrl: './cards.component.html',
-  styleUrls: ['./cards.component.css']
+  styleUrls: ['./cards.component.scss']
 })
 export class CardsComponent implements OnInit {
   data: any[] = [];
@@ -15,7 +15,6 @@ export class CardsComponent implements OnInit {
   @Input() population: number | undefined;
   @Input() region: string | undefined;
   @Input() capital: string | undefined;
-
 
   constructor(
     private apiService: ApiService,

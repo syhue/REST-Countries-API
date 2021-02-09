@@ -1,14 +1,22 @@
 <div class="container">
-    <button mat-raised-button>Back</button>
+    <button mat-raised-button [routerLink]="''">Back</button>
 
     <div class="horizontal-flex-container">
-        <img mat-card-image src="{{data[0].flag}}" alt="">
-        <p>{{ data[0].name }}</p>
+        <div class="left-flex-container"><img mat-card-image src="{{data[0].flag}}" alt=""></div>
 
-
+        <div class="right-flex-container">
+            <div><h1>{{ data[0].name }}</h1></div>
+            <div><span>Native Name: </span>{{ data[0].nativeName }}</div>
+            <div><span>Population: </span>{{ data[0].population }}</div>
+            <div><span>Region: </span>{{ data[0].region }}</div>
+            <div><span>Sub Region: </span>{{ data[0].subregion }}</div>
+            <div><span>Capital: </span>{{ data[0].capital }}</div>
+            <div><span>Top Level Domain: </span>{{ data[0].topLevelDomain }}</div>
+            <div><span>Currencies: </span>{{ data[0].currencies[0].name }}</div>
+            <div><span>Languages: </span>{{ languages }}</div>
+            <div *ngIf="data[0].borders[0]" class="little-horizontal-flex-container"><span>Border Countries: </span>
+                <div *ngFor="let item of data[0].borders"><button mat-raised-button >{{ item }}</button></div>
+            </div>            
+        </div>
     </div>
-
-
-
-
 </div>

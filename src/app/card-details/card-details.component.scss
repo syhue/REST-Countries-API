@@ -1,3 +1,87 @@
 .container{
-    margin: 2rem 5rem;
+    background-color: hsl(0, 0%, 98%);
+    padding: 2rem 5rem;
+
+    .horizontal-flex-container {
+        display: flex;
+        flex-direction: row;
+
+        .left-flex-container {
+            margin-top: 5rem;
+            width: 40rem;
+            min-width: 500px;
+            display: flex;
+
+            img{
+                width: 100%;
+            }
+        }
+
+        .right-flex-container {
+            margin-top: 5rem;
+            margin-left: 5rem;
+            font-size: medium;
+
+            div {
+                margin-bottom: 1rem;
+            }
+
+            h1 {
+                font-weight: 800;
+                margin-bottom: 2rem;
+            }
+
+            span {
+                font-weight: 600;
+            }
+        }
+    }
+}
+
+.little-horizontal-flex-container {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    flex-wrap: wrap;
+    
+    div {
+        margin-left: 0.5rem;
+    }
+}
+
+@media screen and (max-width: 600px) {
+
+    .container {
+        padding: 0;
+        width: 100vw;
+
+        button {
+            margin-left: 1rem;
+            margin-top: 1rem;
+        }
+
+        .horizontal-flex-container {
+            flex-direction: column;
+            width: 100vw;
+    
+            .left-flex-container {
+                margin-top: 3rem;
+                width: 90%;
+                padding-left: 5%;
+                display: flex;
+                min-width: 0;
+            }
+
+            .right-flex-container {
+                padding: 1rem;
+                margin-top: 0rem;
+                margin-left: 0rem;
+                font-size: medium;
+
+                h1 {
+                    margin-top: 2rem;
+                }
+            }
+        }  
+    }
 }
