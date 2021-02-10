@@ -1,23 +1,13 @@
 .horizontal-flex-container {
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
     align-items: center;
     height: fit-content;
     padding-left: 5rem;
     padding-right: 5rem;
-    padding-top: 1rem;
-    padding-bottom: 1rem;
-
-    .dark-mode-container {
-        display: flex;
-        flex-direction: row;
-        
-        div {
-            margin-left: 0.5rem;
-            align-items: center;
-            height: fit-content;
-        }
+    padding-top: 2rem;
+    padding-bottom: 1rem;  
+    
+    h1 {
+        font-weight: 800;
     }
 }
 
