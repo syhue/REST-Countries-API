@@ -1,27 +1,12 @@
-# ChallengeOne
+# REST Countries API
 
-This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 11.0.5.
+This is an advanced challenge from Frontend Mentor: https://www.frontendmentor.io/challenges/rest-countries-api-with-color-theme-switcher-5cacc469fec04111f7b848ca/hub/rest-countries-api-A0I_Cg8bj. 
 
-## Development server
+Angular 11 is used in building this website. 
 
-Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The app will automatically reload if you change any of the source files.
-
-## Code scaffolding
-
-Run `ng generate component component-name` to generate a new component. You can also use `ng generate directive|pipe|service|class|guard|interface|enum|module`.
-
-## Build
-
-Run `ng build` to build the project. The build artifacts will be stored in the `dist/` directory. Use the `--prod` flag for a production build.
-
-## Running unit tests
-
-Run `ng test` to execute the unit tests via [Karma](https://karma-runner.github.io).
-
-## Running end-to-end tests
-
-Run `ng e2e` to execute the end-to-end tests via [Protractor](http://www.protractortest.org/).
-
-## Further help
-
-To get more help on the Angular CLI use `ng help` or go check out the [Angular CLI Overview and Command Reference](https://angular.io/cli) page.
+Uses are able to: 
+1) See all countries from the API on the homepage
+2) Search for a country using an input field
+3) Filter countries by region
+4) Click on a country to see more detailed information on a separate page
+5) Click through to the border countries on the detail page (in progress)
