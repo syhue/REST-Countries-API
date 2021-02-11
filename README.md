@@ -9,4 +9,5 @@ Uses are able to:
 2) Search for a country using an input field
 3) Filter countries by region
 4) Click on a country to see more detailed information on a separate page
-5) Click through to the border countries on the detail page (in progress)
+5) Click through to the border countries on the detail page
+6) Theme toggle (in progress)
