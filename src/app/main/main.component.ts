@@ -9,7 +9,7 @@ import { ApiService } from '../services/api.service';
 })
 
 export class MainComponent implements OnInit{
-    isDark: Boolean = false;
+    public isDark: Boolean = false;
     data: any;
     panelColor = new FormControl('red');
     regions = [

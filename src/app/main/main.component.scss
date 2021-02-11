@@ -62,25 +62,24 @@
 
 .darkMode{
     color: white;
-    background-color: hsl(209, 23%, 22%);
 
-    button {
-        color: white;
-        background-color: hsl(207, 26%, 17%);
+    .horizontal-container {
+        background-color: hsl(209, 23%, 22%);
     }
 
-    .horizontal-flex-container {
+    button {
         background-color: hsl(207, 26%, 17%);
         color: white;
-        
-        mat-form-field {
-            background-color: hsl(209, 23%, 22%);
-            color: white;
+    }
 
-            mat-label, input, mat-select, .mat-option{
+    .body-container {
+        background-color: hsl(207, 26%, 17%);
+
+        .horizontal-flex-container {
+            background-color: hsl(207, 26%, 17%);
+            
+            mat-label,mat-option,mat-select,span {
                 color: white;
-                background-color: hsl(209, 23%, 22%) !important;
-
             }
         }
     }
@@ -88,9 +87,5 @@
     .card-container {
         background-color: hsl(207, 26%, 17%);
         color: white;
-
-        app-cards {
-            background-color:  hsl(209, 23%, 22%);
-        }
     }
 }

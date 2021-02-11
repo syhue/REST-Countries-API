@@ -16,6 +16,7 @@ export class CardsComponent implements OnInit {
     @Input() region: string | undefined;
     @Input() capital: string | undefined;
     @Input() code: string | undefined;
+    @Input() darkMode: Boolean | undefined;
 
     constructor(
        private apiService: ApiService,

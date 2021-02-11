@@ -1,5 +1,5 @@
 .example-card {
-    width: 250px;
+    width: 280px;
     aspect-ratio: 4/5;
 }
 
@@ -13,9 +13,14 @@
 
 .flag {
     width: 100%;
-    aspect-ratio: 16 / 9;
+    aspect-ratio: 26 / 15;
     
     img {
-        height: 100%;
+        height:100%;
     }
+}
+
+.darkMode {
+    background-color:  hsl(209, 23%, 22%);
+    color: white;
 }

@@ -1,5 +1,5 @@
-<mat-card class="example-card" [routerLink]="['./', code]">
-    <div class="flag"><img mat-card-image src="{{photo}}" alt="Photo of a Shiba Inu"></div>
+<mat-card class="example-card" [routerLink]="['./', code]" [ngClass]="{'darkMode': darkMode}">
+    <div class="flag"><img mat-card-image src="{{photo}}"></div>
     <mat-card-content>
         <h2 class="bold-800">{{ name }}</h2>
         <h4><span class="bold-500">Population: </span>{{ population }}</h4>
