@@ -13,7 +13,7 @@ import { FormsModule } from '@angular/forms';
 import { CardDetailsComponent } from './card-details/card-details.component';
 import { MainComponent } from './main/main.component';
 import { MatButtonModule } from '@angular/material/button';
-
+import { ReactiveFormsModule } from '@angular/forms';
 
 
 @NgModule({
@@ -34,6 +34,7 @@ import { MatButtonModule } from '@angular/material/button';
     MatCardModule,
     FormsModule,
     MatButtonModule,
+    ReactiveFormsModule
   ],
   providers: [],
   bootstrap: [AppComponent],

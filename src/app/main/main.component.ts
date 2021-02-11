@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { FormControl } from '@angular/forms';
 import { ApiService } from '../services/api.service';
 
 @Component({
@@ -8,7 +9,9 @@ import { ApiService } from '../services/api.service';
 })
 
 export class MainComponent implements OnInit{
+    isDark: Boolean = false;
     data: any;
+    panelColor = new FormControl('red');
     regions = [
         { value: 'africa', viewValue: 'Africa' },
         { value: 'americas', viewValue: 'Americas' },
@@ -35,5 +38,14 @@ export class MainComponent implements OnInit{
         if(!event.target.value) {
            this.getData();
         }
+    }
+
+    toggleTheme(){
+        if (!this.isDark){
+            this.isDark = true;
+        } else {
+            this.isDark = false;
+        }
+        console.log(this.isDark);
     }
 }

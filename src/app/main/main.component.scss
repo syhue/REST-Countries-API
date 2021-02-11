@@ -39,3 +39,58 @@
         padding-right: 1rem;
     }
 }
+
+.horizontal-container {
+    padding-left: 5rem;
+    padding-right: 5rem;
+    display: flex;
+    align-items:center;
+    justify-content: space-between;
+    height: 5rem;
+    
+    h1 {
+        font-weight: 800;
+    }
+}
+
+@media screen and (max-width: 600px) {
+
+    .horizontal-container {
+        justify-content: center;
+    }
+}
+
+.darkMode{
+    color: white;
+    background-color: hsl(209, 23%, 22%);
+
+    button {
+        color: white;
+        background-color: hsl(207, 26%, 17%);
+    }
+
+    .horizontal-flex-container {
+        background-color: hsl(207, 26%, 17%);
+        color: white;
+        
+        mat-form-field {
+            background-color: hsl(209, 23%, 22%);
+            color: white;
+
+            mat-label, input, mat-select, .mat-option{
+                color: white;
+                background-color: hsl(209, 23%, 22%) !important;
+
+            }
+        }
+    }
+
+    .card-container {
+        background-color: hsl(207, 26%, 17%);
+        color: white;
+
+        app-cards {
+            background-color:  hsl(209, 23%, 22%);
+        }
+    }
+}
