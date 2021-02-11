@@ -8,31 +8,34 @@ import { ApiService } from '../services/api.service';
     styleUrls: ['./card-details.component.scss']
 })
 export class CardDetailsComponent implements OnInit {
-
     name!: string;
     data!: any;
     languages: string | undefined;
     borders: string | undefined;
+    code!: any;
 
     constructor(
         private route: ActivatedRoute,
         private apiService: ApiService,
     ) { }
 
-    ngOnInit() {
-        this.route.params.subscribe(params => this.name = params['name']);
-        this.getData();
+    ngOnInit() { 
+        this.route.params.subscribe(params => {
+            this.code = params.code;
+        });
+        this.getData(this.code);
     }
-
-    getData(){     
-        this.apiService.getName(this.name).subscribe(data => {
+    
+    getData(code: string) {
+        this.code = code || this.code; 
+        this.apiService.getCode(this.code).subscribe(data => {
             this.data = data;
             let arr = [];
 
-            for(let item of data[0].languages){
+            for(let item of this.data.languages){
                 arr.push(item.name);
             }
             this.languages = arr.join();
-      })
-    }    
+        })
+    }
 }

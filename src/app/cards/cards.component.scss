@@ -1,10 +1,10 @@
 .example-card {
     width: 250px;
-    height: 370px;
+    aspect-ratio: 3/4;
 }
 
-.bold-600{
-    font-weight: 600;
+.bold-500{
+    font-weight: 500;
 }
 
 .bold-800 {
@@ -12,7 +12,8 @@
 }
 
 .flag {
-    height: 10rem;
+    width: 100%;
+    aspect-ratio: 16 / 9;
     
     img {
         height: 100%;
